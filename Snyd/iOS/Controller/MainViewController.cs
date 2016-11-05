@@ -16,7 +16,7 @@ namespace Snyd.iOS
 
 			RollDices.TouchDown += (object sender, EventArgs e) => 
 			{
-				
+				RollDicesOutput.Text = "4";
 			};
 
 			// Perform any additional setup after loading the view, typically from a nib.

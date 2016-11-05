@@ -14,8 +14,25 @@ namespace Snyd.iOS
     [Register ("MainViewController")]
     partial class MainViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton RollDices { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField RollDicesOutput { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (RollDices != null) {
+                RollDices.Dispose ();
+                RollDices = null;
+            }
+
+            if (RollDicesOutput != null) {
+                RollDicesOutput.Dispose ();
+                RollDicesOutput = null;
+            }
         }
     }
 }
